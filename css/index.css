@@ -26,7 +26,7 @@ header {
     height: 100%;
     position: relative;
     overflow: hidden;
-    background: url(../img/background-header.jpg) center no-repeat;
+    background: url(../img/background-header2.jpg) center no-repeat;
     /* Image Credit: Unsplash.me */
     background-size: cover;
 }
@@ -94,8 +94,9 @@ img {
 }
 
 .site a {
-    color: #666;
+    color: #d6d6d6;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .site a:hover {
@@ -106,18 +107,20 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    background: #222;
-    width: 100%
+    background: #202046;
+    width: 100%;
 }
 
 .site nav a {
     padding: 10px 30px;
     font-size: 1.3em;
-    display: inline-block
+    display: inline-block;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
 }
 
 .site nav a:hover {
-    background: #333;
+    text-shadow: #fff;
     color: #fff
 }
 
