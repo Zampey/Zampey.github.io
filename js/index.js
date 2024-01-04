@@ -51,7 +51,7 @@ Scroller.prototype = {
         var slowScroll = currentScrollY / 2
             , blurScroll = currentScrollY * 3
             , opaScroll = 1.4 - currentScrollY / 1350;
-        if (currentScrollY > wHeight)
+        if (currentScrollY > (wHeight * 0.7))
             $('nav').css('position', 'fixed');
         else
             $('nav').css('position', 'absolute');
