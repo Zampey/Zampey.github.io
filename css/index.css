@@ -28,7 +28,6 @@ header {
     position: relative;
     overflow: hidden;
     background: url(../img/background-header.jpg) center no-repeat;
-    /* Image Credit: Unsplash.me */
     background-size: cover;
 }
 
@@ -152,21 +151,21 @@ html {
 .about-me-content {
     margin: auto;
     width: 100%;
+    padding-top: 50px;
 }
 
 .text-content-section-group {
-    flex: 7;
+    flex: 6;
     padding: 0 10em;
     font-size: x-large;
 }
 
 .img-holder {
-    flex: 3;
+    flex: 6;
 }
 
-.guitarist-img {
+.img-holder img {
     width: 50em;
-    /* margin: auto; */
 }
 
 /* styly pro skupiny s ima a texem v sekcích */
@@ -181,12 +180,13 @@ html {
 /* styly pro heading na stránce */
 .section-heading1 {
     font-size: 5em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 /* styly pro projects sekci */
 .projects-content {
     margin-top: 15em;
+    padding-top: 50px;
 }
 
 /* media querries */
@@ -232,7 +232,11 @@ html {
         padding: 0 1em;
     }
 
-    .guitarist-img {
+    .img-holder img {
         width: 30em;
+    }
+
+    .site-content {
+        width: 100%;
     }
 }
