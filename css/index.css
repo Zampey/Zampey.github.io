@@ -3,9 +3,9 @@
     src: url(./font/Exo_Bold_Italic.ttf) format("truetype");
 }
 
-* {
+/* * {
     outline: 1px dotted red;
-}
+} */
 
 html,
 body {
@@ -296,6 +296,7 @@ html {
 
 .review-title {
     margin-bottom: 30px;
+    margin-top: 2em;
 }
 
 .review-card {
@@ -379,7 +380,7 @@ html {
 .carousel>li {
     width: 100em;
     height: 40em;
-    background: #fff;
+    background: #fe633d;
     display: inline-block;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -487,7 +488,7 @@ html {
 
 
     a {
-        color: #999;
+        color: #202046;
     }
 
     i {
