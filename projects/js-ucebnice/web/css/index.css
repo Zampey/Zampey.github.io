@@ -1,0 +1,111 @@
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nadpis-js-uc {
+    text-align: center;
+    font-size: 6em;
+    color: #ffffff;
+    height: 30vh;
+    line-height: 13vh;
+    font-weight: bold;
+    backdrop-filter: blur(2px);
+}
+
+.hlavni-content-webu {
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.code-container {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    background: rgba(126, 20, 22);
+    white-space: pre;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    top: 0;
+    z-index: -1;
+    color: #ffffff;
+}
+
+.left-nav-panel {
+    min-width: 300px;
+    margin-right: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-right: 1px solid #ddd;
+    border-radius: 10px;
+    height: max-content;
+    margin: 20px;
+    flex: 2;
+}
+
+.left-nav-panel h3 {
+    font-size: 1.5em;
+    color: rgba(126, 20, 22);
+    font-size: 1.5em;
+}
+
+.side-nav-bar>a {
+    text-decoration: none;
+    font-size: large;
+    color: #2e101c;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.side-nav-bar {
+    list-style-type: none;
+    margin: 10px 0;
+    transition: all 0.1s;
+    padding: 4px;
+    width: 90%;
+}
+
+.side-nav-bar:hover {
+    border-left: 4px solid #2e101c;
+    background-color: #dfdfdf;
+}
+
+.footer {
+    background: rgb(126, 20, 22);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    min-height: 50px;
+    justify-content: center;
+}
+
+.footer-content-right li {
+    display: inline;
+    list-style-type: none;
+
+}
+
+.footer-content-right a {
+    color: #ffffff;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.link-github {
+    font-weight: bolder;
+    margin: 10px;
+    color: #fe4e4e;
+    text-decoration: none;
+}
+
+.made-by-div {
+    color: #e43131;
+}
