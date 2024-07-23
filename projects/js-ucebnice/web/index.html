@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaSript Učebnice</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/md-viewer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.0.12/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+</head>
+<body>
+    <div class="heading">
+        <div class="nadpis-js-uc">
+            JavaSript<br>
+            Učebnice
+        </div>
+        <div id="code-animation" class="code-container"></div>
+    </div>
+
+    <div class="hlavni-content-webu">
+        <div class="left-nav-panel">
+            <h2>Lekce</h2>
+            <ul>
+                <h3>Cykly</h3>
+                <li class="side-nav-bar"><a onclick="loadNewMDDoc('cykly/For Cyklus.md')">For Cyklus</a></li>
+                <li class="side-nav-bar"><a onclick="loadNewMDDoc('cykly/While Cyklus.md')">While Cyklus</a></li>
+
+                <h3>Datové typy</h3>
+                <li class="side-nav-bar"><a onclick="loadNewMDDoc('datové typy/Datové typy v JS.md')">Datové typy</a>
+                </li>
+
+                <h3>Operace</h3>
+                <li class="side-nav-bar"><a onclick="loadNewMDDoc('operace/Operace s čísly.md')">Operace s čísly</a>
+                </li>
+                <li class="side-nav-bar"><a onclick="loadNewMDDoc('operace/Operace s řetězci.md')">Operace s řetězci</a>
+                </li>
+
+                <h3>Podmínky a Switch</h3>
+                <li class="side-nav-bar"><a
+                        onclick="loadNewMDDoc('podmínky a switch/Porovnávací operátory.md')">Porovnávací operátory</a>
+                </li>
+                <li class="side-nav-bar"><a onclick="loadNewMDDoc('podmínky a switch/Logické operátory.md')">Logické
+                        operátory</a></li>
+                <li class="side-nav-bar"><a onclick="loadNewMDDoc('podmínky a switch/Podmínky.md')">Podmínky</a></li>
+                <li class="side-nav-bar"><a onclick="loadNewMDDoc('podmínky a switch/Switch.md')">Switch</a></li>
+
+                <h3>Proměnné</h3>
+                <li class="side-nav-bar"><a onclick="loadNewMDDoc('proměnné/Proměnné v JS.md')">Proměnné</a></li>
+                <li class="side-nav-bar"><a onclick="loadNewMDDoc('proměnné/Scope u proměnných.md')">Scope
+                        proměnných</a></li>
+
+                <h3>Struktury</h3>
+                <li class="side-nav-bar"><a onclick="loadNewMDDoc('struktury/Pole.md')">Pole</a></li>
+            </ul>
+            </ul>
+        </div>
+        <div id="content-md" class="markdown-body"></div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-content-left">
+                <h3>JavaSript Učebnice</h3>
+                <p>Učebnice pro začátečníky i pokročilé, kteří chtějí zlepšit své znalosti v JavaScriptu.</p>
+            </div>
+            <div class="footer-content-right">
+                <h3>Užitečné odkazy</h3>
+                <div class="odkazy-footer">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs</a>
+                    <a href="https://www.w3schools.com/js/default.asp" target="_blank">W3Schools</a>
+                    <a href="https://www.javascript.com/" target="_blank">JavaScript.com</a>
+                </div>
+            </div><br>
+            <div class="made-by-div">
+                Made by <a class="link-github" href="https://github.com/zampey" target="_blank">Zampey</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var typed = new Typed("#code-animation", {
+                strings: [
+                    "const message = 'Welcome to JavaScript Tutorial for all levels!';\n" +
+                    "console.log(message);\n\n" +
+                    "function add(a, b) { return a + b; }\n" +
+                    "const sum = add(20, 30); console.log(`The sum of 20 and 30 is: ${sum}`);\n\n" +
+                    "class Person {\n" +
+                    "    constructor(name, age, profession) { this.name = name; this.age = age; this.profession = profession; }\n" +
+                    "    greet() { return `Hello, my name is ${this.name} and I am ${this.age} years old. I work as a ${this.profession}.`; }\n" +
+                    "}\n\n" +
+                    "const john = new Person('John', 25, 'developer'); console.log(john.greet());\n" +
+                    "const jane = new Person('Jane', 30, 'designer'); console.log(jane.greet());\n" +
+                    "if (john.age > jane.age) { console.log(`${john.name} is older than ${jane.name}.`); }\n" +
+                    "\n" +
+                    "console.log('Thank you for visiting JavaScript Tutorial!');"
+                ],
+                typeSpeed: 50,
+                backSpeed: 25,
+                loop: true,
+                backDelay: 100,
+            });
+
+            fetch('./docs/proměnné/Proměnné v JS.md')
+                .then(response => response.text())
+                .then(text => {
+                    const contentElement = document.getElementById('content-md');
+                    contentElement.innerHTML = marked.parse(text);
+                    document.querySelectorAll('pre code').forEach((block) => {
+                        hljs.highlightBlock(block);
+                    });
+                });
+        });
+
+        function loadNewMDDoc(docPath) {
+            fetch('./docs/' + docPath)
+                .then(response => response.text())
+                .then(text => {
+                    const contentElement = document.getElementById('content-md');
+                    contentElement.innerHTML = marked.parse(text);
+                    document.querySelectorAll('pre code').forEach((block) => {
+                        hljs.highlightBlock(block);
+                    });
+                });
+        }
+    </script>
+</body>
+</html>
