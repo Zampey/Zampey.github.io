@@ -206,6 +206,20 @@ html {
     border-radius: 25px;
 }
 
+.open-project-ucebnice-btn {
+    position: absolute;
+    right: 50px;
+    top: 60px;
+    border: #ffffff solid 2px;
+    border-radius: 6px;
+    padding: 3px;
+    font-size: 26px;
+    color: white;
+    background-color: #962c3a;
+    box-shadow: 2px 1px 8px 0 #830021;
+    cursor: pointer;
+}
+
 /* media querries */
 
 @media screen and (max-width: 2300px) {
