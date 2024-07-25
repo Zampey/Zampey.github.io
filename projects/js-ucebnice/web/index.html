@@ -126,7 +126,7 @@
         });
 
         function loadNewMDDoc(docPath) {
-            fetch('https://zampey.github.io/projects/js-ucebnice/web/docs/' + docPath)
+            fetch('./docs/' + docPath)
                 .then(response => response.text())
                 .then(text => {
                     const contentElement = document.getElementById('content-md');
