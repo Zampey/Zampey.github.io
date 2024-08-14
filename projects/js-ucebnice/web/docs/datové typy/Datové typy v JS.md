@@ -59,7 +59,7 @@ var jeStudentCiselne = 0; // nepravda
 
 ### Neurčeno (Undefined)
 
-Undefined je datový typ, který označuje, že proměnná byla deklarována (vytvořena), ale ještě jí nebyla přiřazena hodnota.
+Undefined je datový typ, který označuje, že proměnná byla inicializována (vytvořena), ale ještě jí nebyla přiřazena hodnota.
 #### Příklad:
 ```javascript
 var neznamaPromenna;
