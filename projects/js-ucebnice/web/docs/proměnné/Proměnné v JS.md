@@ -82,7 +82,7 @@ Pořád ale ještě nevím jaký význam má jaké klíčové slovo. Pojďme si 
 
 #
 
-`const` (jako *constant* -> *trvalý, konstatncí, neměnný*)
+`const` (jako *constant* -> *trvalý, konstantní, neměnný*)
 - toto klíčové slovo nám říká že proměná tohoto typu není editovatelná. takže jakmile do ní jednou něco uložíme už to nemůžeme měnit ani smazat.
 - můžeme si hodnotu uloženou v této proměnné pouze vzít a používat ji
 
