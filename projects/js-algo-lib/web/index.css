@@ -1,0 +1,174 @@
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    font-size: small;
+}
+
+.kategorieTitle {
+    font-size: 1.5em;
+
+}
+
+.sidebar {
+    background-color: #1e1e1e;
+    padding: 20px;
+    height: max-content;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #00bcd4 #1e1e1e;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #00bcd4;
+    border-radius: 10px;
+    border: 2px solid #1e1e1e;
+}
+
+.sidebar h2,
+.sidebar h3 {
+    color: #00bcd4;
+    margin-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    border-radius: 5px;
+}
+
+.sidebar ul li:hover {
+    background: #333;
+    transform: scale(1.05);
+}
+
+.code-block {
+    background: #2e2e2e;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Fira Code', monospace;
+    overflow-x: auto;
+}
+
+.download-btn {
+    background: #00ff7f;
+    color: #121212;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.download-btn:hover {
+    background: #00cc66;
+    transform: scale(1.1);
+}
+
+/** STYLY PRO MARKDOWN*/
+/* Styly pro Markdown obsah */
+#algo-content {
+    font-family: 'Fira Code', monospace;
+    color: #d3d3d3;
+    /* Světle šedý text pro lepší čitelnost */
+    background-color: #2e2e2e;
+    /* Tmavě šedé pozadí, které ladí s ostatním webem */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Nadpisy v Markdownu */
+#algo-content h1,
+#algo-content h2,
+#algo-content h3,
+#algo-content h4,
+#algo-content h5,
+#algo-content h6 {
+    color: #00bcd4;
+    /* Světle modré nadpisy pro kontrast */
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Odstavce */
+#algo-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #d3d3d3;
+    /* Světle šedý text pro lepší čitelnost */
+}
+
+/* Seznamy (ul, ol) */
+#algo-content ul,
+#algo-content ol {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+#algo-content li {
+    margin-bottom: 10px;
+    color: #d3d3d3;
+    /* Světle šedý text pro seznamy */
+}
+
+/* Hyperlinky */
+#algo-content a {
+    color: #00bcd4;
+    /* Světle modré odkazy */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#algo-content a:hover {
+    color: #00ff7f;
+    /* Při hoveru světlejší odstín */
+}
+
+/* Kódové bloky */
+#algo-content pre {
+    background-color: #3a3a3a82;
+    /* Tmavší šedé pozadí pro kódové bloky */
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Fira Code', monospace;
+    color: #f1f1f1;
+    /* Světlejší text pro kód */
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+#algo-content code {
+    /* Tmavší šedé pozadí pro inline kód */
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-family: 'Fira Code', monospace;
+    color: #f1f1f1;
+    background-color: #57575787;
+    /* Světlejší text pro inline kód */
+}
+
+/* Bloky pro zvýraznění syntaxe, pokud je použita knihovna pro zvýraznění kódu (např. Prism.js nebo Highlight.js) */
+#algo-content .hljs {
+    background-color: transparent;
+    /* Tmavší šedé pozadí pro zvýrazněný kód */
+    padding: 15px;
+    border-radius: 5px;
+    color: #f1f1f1;
+    /* Světlejší text pro zvýrazněný kód */
+}
